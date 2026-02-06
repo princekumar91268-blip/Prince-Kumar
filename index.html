@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0221;
+            font-family: 'Outfit', sans-serif;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .font-syncopate {
+            font-family: 'Syncopate', sans-serif;
+        }
+        .neon-text-blue {
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 0 0 20px rgba(0, 212, 255, 0.4);
+        }
+        .neon-text-pink {
+            text-shadow: 0 0 10px rgba(255, 0, 85, 0.8), 0 0 20px rgba(255, 0, 85, 0.4);
+        }
+        .neon-border-blue {
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.5), inset 0 0 5px rgba(0, 212, 255, 0.3);
+        }
+        .neon-border-pink {
+            box-shadow: 0 0 10px rgba(255, 0, 85, 0.5), inset 0 0 5px rgba(255, 0, 85, 0.3);
+        }
+        .bg-neon-gradient {
+            background: radial-gradient(circle at center, #1a0b3c 0%, #0d0221 100%);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-neon-gradient min-h-screen">
+    <div id="root"></div>
+</body>
+</html>
